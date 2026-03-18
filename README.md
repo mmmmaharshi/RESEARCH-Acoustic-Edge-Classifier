@@ -80,29 +80,6 @@ The complete inference pipeline — MFCC extraction through binary decision — 
 
 ---
 
-## 🗂️ Repository Structure
-
-```
-├── acoustic_edge_pipeline_clean.ipynb   # Full pipeline (27 cells)
-├── results/
-│   ├── cv5_table.tex                    # Table 1 — main CV results
-│   ├── ablation_table.tex               # Table 2 — feature ablation
-│   ├── transfer_table.tex               # Table 3 — transfer learning
-│   ├── cv5_results.png                  # Figure 1 — CV bar charts
-│   ├── pareto_accuracy_energy.png       # Figure 2 — Pareto plot
-│   ├── transfer_comparison.png          # Figure 3 — transfer plot
-│   ├── ablation_plot.png                # Figure 4 — ablation plot
-│   ├── confusion_matrices.png
-│   ├── roc_pr_curves.png
-│   └── fpr_by_category.png
-└── models/
-    ├── weights.h                        # C header — drop into MCU project
-    ├── perc_weights.npy
-    └── cnn_best.keras
-```
-
----
-
 ## ⚡ MCU Deployment
 
 The perceptron is exported as a single C header file. Drop it into any C/C++ microcontroller project:
